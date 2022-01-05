@@ -26,7 +26,7 @@ body{
 
 .header > h1 {
     color: blanchedalmond;
-    font-size: 2.5em;
+    font-size: 2em;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -50,10 +50,12 @@ body{
 .skills{
     display: flex;
     justify-content: center;
-
+    flex-direction: column;
+    background-color: cornflowerblue;
+    align-items: center;
 }
 .conteinerSkills{
-    background-color: cornflowerblue;
+    /*background-color: cornflowerblue;*/
     width: 100%;
     min-height: auto;
     display: flex;
@@ -61,10 +63,12 @@ body{
     align-content: center;
     justify-content: space-around;
 }
-.text-Skills{
-    font-size: 1em;
-    /*background: red;*/
-    max-width: 100%;
+#skills-text{
+    font-size: 1.5em;
+    color: ivory;
+    animation: skillText 1s ease;
+
+    
 }
 
 
@@ -106,4 +110,16 @@ body{
     border-radius: 10px;
     background-color: rgb(17, 77, 255);
     transition: width  2s ;
+}
+
+
+@keyframes skillText{
+    from{
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0%);
+    }
 }
