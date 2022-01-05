@@ -26,7 +26,7 @@ body{
 
 .header > h1 {
     color: blanchedalmond;
-    font-size: 2.23em;
+    font-size: 2.5em;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -64,9 +64,9 @@ body{
     justify-content: space-around;
 }
 #skills-text{
-    font-size: 1.7em;
+    font-size: 2em;
     color: ivory;
-    animation: skillText 1s ease;
+    animation: skillText 1.5s ease;
 
     
 }
@@ -109,7 +109,7 @@ body{
     height: 100%;
     border-radius: 10px;
     background-color: rgb(17, 77, 255);
-    transition: width  2s ;
+    transition: width  2.5s ;
 }
 
 
