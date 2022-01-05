@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-size: 1em;
+    font-size: 1.3em;
 }
  
 body{
@@ -14,10 +14,13 @@ body{
 
 .header{
     background-color: black;
-    height: 200px;
+    height: 250px;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-evenly;
     align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
     
 }
 
