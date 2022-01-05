@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+}
+ 
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.header{
+    background-color: black;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.header > h1 {
+    color: blanchedalmond;
+}
+.skills{
+    display: flex;
+    justify-content: center;
+
+}
+.conteinerSkills{
+    background-color: cornflowerblue;
+    width: 100%;
+    min-height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+}
+.text-Skills{
+    font-size: 1em;
+    /*background: red;*/
+    max-width: 100%;
+}
+
+
+.conteinerImg{
+    max-width: 150px;
+    min-width: 100px;
+    display: flex;
+    justify-content: space-around;
+    /*background: rebeccapurple;*/
+    flex-wrap: wrap;
+    /*flex-direction: column;*/
+    align-content: center;
+    align-items: center;
+}
+.imgCont{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.imgCont > img{
+    max-width: 50%;
+    
+    
+}
+.progress{
+    width: 100%;
+    height: 15px;
+    border-radius: 10px;
+    background-color: rgba(1, 17, 65, 1);
+    /*animation: progresso 1s linear forwards;*/
+    margin-top: 10px;
+}
+.porcentProgress{
+    
+    width: 0%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgba(4, 52, 196, 0.3);
+    transition: width  2s ;
+}
