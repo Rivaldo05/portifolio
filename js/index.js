@@ -9,16 +9,13 @@ const select = (el)=> document.querySelector(el)
 const selectall = (el)=> document.querySelectorAll(el)
 
 skills.map((lang, langIndex) => {
-    SkillArea = select('.conteinerImg').cloneNode(true);/* o obj a ser clonado tem que estar em uma area que não interfira bo doc*/
-    /*SkillArea  = document.createElement('div')
-    SkillArea.classList.add('conteinerImg')*/
+    /*SkillArea = select('.conteinerImg').cloneNode(true);/* o obj a ser clonado tem que estar em uma area que não interfira bo doc*/
+    SkillArea  = document.createElement('div')
+    SkillArea.classList.add('conteinerImg')
     conteiner = `
-    <div class="imgCont">
         <img src="${lang.imgName}" alt="${lang.lang}">
-        <div class="progress">
-            <div class="porcentProgress" ></div>
-        </div>
-    </div>`
+        <span class="lang-name">${lang.lang}</span>
+    `
 
     SkillArea.innerHTML = conteiner
 
