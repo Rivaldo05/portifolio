@@ -7,6 +7,7 @@
 
 :root{
     --temp-animeCard: 0.5s;
+    --skil-textAnim : 1.5s;
 }
 
 body{
@@ -56,24 +57,25 @@ body{
 
 }
 .conteinerSkills{
-    background-color: rebeccapurple;
     width: 80vw;
-    max-width: 100%;
+    max-width: 900px;
+    min-height: 400px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     justify-content: center;
+    justify-items: center;
     align-items: center;
-    align-content: center;
+    align-content: space-evenly;
     gap: 20px;
     
 } 
 
 
 #skills-text{
-    font-size: 2em;
+    font-size: 2.5em;
     color: ivory;
-    animation: skillText 1.5s ease;
-    margin: 30px;
+    animation: skillText var(--skil-textAnim) ease;
+    margin-top: 30px;
 }
 
 .conteinerImg{
@@ -85,7 +87,6 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    background-color: red;
 
 }
 
@@ -95,14 +96,14 @@ body{
 
 .lang-name{
     color: silver;
-    font-size: 1.1em;
     text-transform: uppercase;
+    text-align: center;
 }
 
 @keyframes skillText{
     from{
         opacity: 0;
-        transform: translateX(-50%);
+        transform: translate3d(-20vw, 0px, 0px)
     }
     to{
         opacity: 1;
@@ -112,16 +113,16 @@ body{
 
 /*ANIMAÇÃO DOS CARDS*/
 [data-anim]{
-    opacity: 1;
-    transition: 0.5s;
+    opacity: 0;
+    transition: var(--temp-animeCard);
 }
 
 [data-anim="left"]{
-    transform: translate3d(-150px, 0px, 0px);
+    transform: translate3d(-100px, 0px, 0px);
 }
 
 [data-anim="righ"]{
-    transform: translate3d(150px, 0px, 0px);
+    transform: translate3d(50px, 0px, 0px);
 }
 
 [data-anim].animate {
