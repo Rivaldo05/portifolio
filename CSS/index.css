@@ -74,21 +74,27 @@ p{
 }
 
 #skills{
-    text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
 }
 
 .conteinerSkills{
     width: 100%;
     max-width: 900px;
-    min-height: 400px;
+    min-height: 200px;
     display: grid;
     grid-template-columns: repeat(auto-fit, 200px);
     justify-content: center;
     justify-items: center;
     align-items: center;
     align-content: space-evenly;
+    padding: 0 10px;
     gap: 20px;
     
 } 
@@ -109,6 +115,10 @@ p{
     border-radius: 10px;
     padding: 10px;
     box-shadow: 2px 5px 5px rgb(3, 53, 139);
+}
+
+.conteinerImg:hover{
+    animation: bouce 1.5s linear reverse;
 }
 
 .conteinerImg > img{
@@ -132,6 +142,23 @@ p{
     }
 }
 
+@keyframes bouce {
+    20%{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-50px);
+    }
+    60%{
+        transform: translateY(0);
+    }
+    80%{
+        transform: translateY(-50px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
 /*ANIMAÇÃO DOS CARDS*/
 [data-anim]{
     opacity: 0;
