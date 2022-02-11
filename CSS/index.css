@@ -122,7 +122,7 @@ p{
 }
 
 .conteinerImg:hover{
-    animation: bouce 1.5s linear reverse;
+    animation: bouce 1.2s linear reverse;
 }
 
 .conteinerImg > img{
