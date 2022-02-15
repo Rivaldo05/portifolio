@@ -29,10 +29,8 @@ function animeScrool(){
   dataAtributes.forEach((elemento_data)=>{
     if (alturaTela > elemento_data.offsetTop){
       elemento_data.classList.add(classAnimate)
-      console.log(1);
     }else{
       elemento_data.classList.remove(classAnimate)
-      console.log(2);
     }
   })
 }
@@ -53,9 +51,10 @@ const debounce = function(func, wait, immediate) {
   };
 };
 
+
 animeScrool()
 if(dataAtributes.length){
-  window.addEventListener('scroll',
+    window.addEventListener('scroll',
     debounce(()=>{
     animeScrool()
   },100)
