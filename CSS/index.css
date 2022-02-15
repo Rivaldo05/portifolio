@@ -30,7 +30,6 @@ p{
     align-content: space-around;
     gap: 5px;
     padding: 20px 10px;
-    
 }
 
 #header-info> * {
@@ -47,8 +46,6 @@ p{
 #header-img{
     max-width: 100px;
     min-width: 50px;
-    min-height: 50px;
-    max-height: 100px;
 }
 #header-img  > img {
     width: 100%;
