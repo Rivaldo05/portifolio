@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Share+Tech&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -5,7 +7,7 @@
     font-size: 1em;
     line-height: 1.4em;
     max-width: 100%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat',Arial, Helvetica, sans-serif;
     border: none;
 }
 
@@ -17,10 +19,17 @@ img{
     width: 100%;
     object-fit: cover;
 }
-h1,h2, h3 {
+h1,h2, h3, h4 {
     text-transform: uppercase;
     text-align: center;
     font-size: 2em;
+    font-family: 'Share Tech';
+    font-weight:800;
+}
+h4{
+    font-size: 1.25em;
+    color: #f0f8ff;
+    font-weight: 500;
 }
 body{
     width: 100vw;
@@ -90,7 +99,7 @@ p{
     align-content: space-evenly;
     padding: 0 10px;
     gap: 20px;
-    
+    overflow: hidden;
 } 
 
 #skills-text{
