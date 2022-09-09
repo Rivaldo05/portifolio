@@ -22,7 +22,7 @@
     <meta name="author" content="Rivaldo dos Santos Lima"/>
 
     <!--LINKS-->
-    <link rel="icon" type="image/png" href="Imagens/desenvolvedor512.png">
+    <link rel="icon" type="image/png" href="Imagens/desenvolvedor.png">
     <!--<link rel= "canonical" href="https://rivaldo05.github.io/sportAlfa/" />-->
     <link rel="stylesheet" href="CSS/index.css">
 
@@ -32,9 +32,13 @@
 
     <body>
         <header class="header">
-            <div id="header-img">
-                <img src="Imagens/perfil.png" alt="teste">
-            </div> 
+            <figure id="header-img">
+                <lord-icon
+                    src="https://cdn.lordicon.com/nobciafz.json"
+                    trigger="loop"
+                    colors="primary:#ffffff,secondary:#ffffff" scale="70">
+                </lord-icon>
+            </figure> 
             <div id="header-info">
                 <h1>Rivaldo</h1>
                 <span>desenvolvedor Front-end</span>
@@ -42,30 +46,49 @@
             
         </header>
 
-        <section id="QuemSou">
-            <h2 class="linha">Quem sou</h2>
+        <main>
+            <section>
 
-            <p>Olá, me chamo Rivaldo dos Santos, sou freelancer como desenvolvedor Front-end. Desenvolvo interfaces modernas e de alta qualidade, concentrado em performance, animações e SEO.</p>
-        </section>
-
-        <section id="skills">
-
-            <span id="skills-text">skills</span>
-            <div class="conteinerSkills">
-                    <!--O JS ACRESCENTA AS IMGS AQUI-->
-
-            </div>
-        </section>
-
-        <section class="projects">
-
+                <article id="QuemSou">
+                    <h2 class="linha">Quem sou</h2>
+        
+                    <p>Olá, me chamo Rivaldo dos Santos, sou freelancer como desenvolvedor Front-end. Desenvolvo interfaces modernas e de alta qualidade, concentrado em performance, animações e SEO.</p>
+                    <p></p>
+                    <section id="skills">
+                        <h3 id="skills-text">skills</h3>
+                
+                        <div class="conteinerSkills">
+                                <!--O JS ACRESCENTA AS IMGS AQUI-->
             
-        </section>
+                        </div>
+                    </section>
+                </article>
+            </section>
+        </main>
 
-        <section class="hobbies">
+        <footer>
+            <h4>Me envie uma mensagem</h4>
+            <form action="https://formsubmit.co/hivaldo05@gmail.com" method="post" id="Formfooter">
+                <input type="hidden" name="_next" value="">
+                <input type="hidden" name="_captcha" value="false">
 
-        </section>
+                <fieldset>
+                    <input type="text" name="Nome" placeholder="Nome" required>
+                </fieldset>
+                <fieldset>
+                    <input type="text" name="Telefone" placeholder="Telefone" required>
+                </fieldset>
+                <fieldset>
+                    <input type="email" name="email" placeholder="Email" required>
+                </fieldset>
+                <fieldset>
+                    <textarea name="message" id="TextArea" rows="5" placeholder="Sua mensagem"></textarea>
+                </fieldset>
 
+                <button type="submit" id="submit">Enviar</button>
+            </form>
+        </footer>
+        <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
         <script src="js/index.js"></script>
     </body>
 </html>

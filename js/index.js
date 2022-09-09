@@ -2,7 +2,9 @@ let skills = [
     {lang : "Python", direcao_anime : "left", nivel: "Básico" , imgName: "Imagens/python.png"},
     {lang :"Html", direcao_anime: "righ", nivel: "Avançado", imgName: "Imagens/html5.png"},
     {lang : "Css", direcao_anime: "left", nivel: "Avançado" , imgName: "Imagens/css.png"},
-    {lang : "JavaScript" , direcao_anime: "righ", nivel: "Básico" , imgName:"Imagens/javascript.png"}
+    {lang : "JavaScript" , direcao_anime: "righ", nivel: "Intermediário" , imgName:"Imagens/javascript.png"},
+    {lang : "React.js" , direcao_anime: "left", nivel: "Básico" , imgName:"Imagens/React.png"},
+    {lang : "C#" , direcao_anime: "righ", nivel: "Básico" , imgName:"Imagens/c.png"}
 ];
 
 const select = (el)=> document.querySelector(el)
